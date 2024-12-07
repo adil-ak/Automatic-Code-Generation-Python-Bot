@@ -62,3 +62,21 @@ This project is a Python-based application that takes two inputs: a CSV file and
 
 ## Example Inputs and Outputs:
 ### Input CSV:
+### User Message:
+`"Calculate the average salary of employees."`
+
+### Generated Code:
+```python
+import pandas as pd
+
+def process_csv(file_path):
+    data = pd.read_csv(file_path)
+    return data['Salary'].mean()
+
+result = process_csv('input.csv')
+print(result)
+
+## Output:
+70000.0
+
+
