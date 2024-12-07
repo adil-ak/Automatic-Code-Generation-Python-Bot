@@ -1,40 +1,64 @@
 # Python AI Developer Assignment
 
-This project is part of a technical assignment designed to build a system that integrates code generation with automated execution. The application uses Python, Flask, and OpenAI's API to process user inputs dynamically.
+This project is a Python-based application that takes two inputs: a CSV file and a user message. Using OpenAI's API, it generates Python code to manipulate the data from the CSV file as requested by the user. The system then executes the generated Python code dynamically and returns the results.
 
-## Objective
+## Features
+- Accepts a CSV file and a user message.
+- Uses OpenAI GPT-3 to generate Python code based on the user’s message.
+- Executes the generated Python code to process the data from the CSV file.
+- Returns both the generated code and the execution result.
 
-The application allows users to:
-1. Upload a CSV file.
-2. Enter a text-based query describing the operation they want to perform on the CSV data.
-3. Generate Python code dynamically using OpenAI's GPT-3.5-turbo model.
-4. Execute the generated Python code and return the result or errors, if any.
+## Setup Instructions
 
----
-
-## Key Features
-
-- **CSV File Handling**: Parse and process uploaded CSV files.
-- **Code Generation**: Generate Python code based on the content of the CSV and user instructions.
-- **Dynamic Execution**: Execute generated Python code securely and return results.
-- **Error Handling**: Robust mechanisms to handle incorrect inputs or API errors.
-
----
-
-## Requirements
-
+### Prerequisites:
 - Python 3.x
-- Dependencies listed in `requirements.txt`
+- Install required Python libraries by running:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
----
+### Running the Application:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/ai-developer-assignment.git
+    ```
 
-## Installation and Setup
+2. Navigate to the project directory:
+    ```bash
+    cd ai-developer-assignment
+    ```
 
-### Prerequisites
-Ensure you have Python 3.x installed on your system.
+3. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-### Steps
-1. Clone this repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+4. Run the Flask app:
+    ```bash
+    python app.py
+    ```
+
+5. Open your browser and go to:
+    ```
+    http://127.0.0.1:5000/
+    ```
+
+6. Upload a CSV file and provide a user message. The app will generate Python code and show the result of the execution.
+
+### Notes:
+- The app uses OpenAI's GPT-3 API to generate Python code based on the user input and CSV data.
+- Make sure to set up your OpenAI API key before running the application. You can include the API key in your code directly or store it in an `.env` file.
+  
+## Files:
+- `app.py`: Main Python file for the application.
+- `requirements.txt`: List of Python dependencies.
+- `index.html`, `styles.css`, `scripts.js`: Frontend files for the user interface.
+
+## Technologies Used:
+- Python 3.x
+- Flask (for the web framework)
+- OpenAI GPT-3
+- Pandas (for CSV manipulation)
+
+## Example Inputs and Outputs:
+### Input CSV:
