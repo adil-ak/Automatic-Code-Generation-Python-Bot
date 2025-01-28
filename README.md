@@ -1,4 +1,4 @@
-# Python AI Developer Assignment
+# Python AI Code Generation Bot
 
 This project is a Python-based application that takes two inputs: a CSV file and a user message. Using OpenAI's API, it generates Python code to manipulate the data from the CSV file as requested by the user. The system then executes the generated Python code dynamically and returns the results.
 
